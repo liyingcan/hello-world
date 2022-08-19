@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册页面</title>
+</head>
+<body>
+    <form action="regist" method="post" enctype="">
+        <table border="1" width="500" align="center">
+            <tr>
+                <td>用户名：</td>
+                <td><input type="text" name="username" ></td>
+            </tr>
+            <tr>
+                <td>密码：</td>
+                <td><input type="password" name="pwd" ></td>
+            </tr>
+            <tr>
+                <td>爱好：</td>
+                <td>
+                    <input type="checkbox" name="hobby" value="lq">篮球
+                    <input type="checkbox" name="hobby" value="zq">足球
+                    <input type="checkbox" name="hobby" value="pq">排球
+                    <input type="checkbox" name="hobby" value="tq">台球
+                </td>
+            </tr>
+            <tr>
+                <td>性别：</td>
+                <td>
+                    <input type="radio" name="sex" value="0">男
+                    <input type="radio" name="sex" value="1">女
+                </td>
+            </tr>
+            <tr>
+                <td>籍贯：</td>
+                <td>
+                    <select name="pro">
+                        <option value="hn">河南</option>
+                        <option value="hb">河北</option>
+                        <option value="bj">北京</option>
+                        <option value="tj">天津</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="submit" value="注册" ></td>
+            </tr>
+        </table>
+
+    </form>
+</body>
+</html>

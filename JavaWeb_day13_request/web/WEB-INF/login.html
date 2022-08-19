@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>仿京东登录</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .top{
+            height: 82px;
+            border: 1px solid blue;
+        }
+        .b{
+            height: 475px;
+            border: 1px solid red;
+            background-image: url(image/banner.png);
+            background-repeat: no-repeat;
+            background-color: #E93854;
+        }
+
+        .bottom{
+            height: 150px;
+            border: 1px solid green;
+        }
+        .top span{
+            display: block;
+            margin-top: 20px;
+            float: left;
+            font-size: 20px;
+            color: #6E6E6E;
+            margin-left: 20px;
+        }
+        .top a{
+            display: block;
+            float: left;
+            margin-left: 100px;
+        }
+        .form{
+            width: 345px;
+            height: 280px;
+            background-color: white;
+            float: right;
+            margin-right: 100px;
+            margin-top: 50px;
+        }
+
+        .b .form h2{
+            color: #706C91;
+            font-weight: normal;
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+        .b .form h2 a{
+            float: right;
+            text-decoration: none;
+            font-size: 12px;
+            color: #BF363D;
+            background: url(image/icon5.jpg) left top no-repeat;
+            padding-left: 20px;
+            margin-right: 20px;
+        }
+        .b .form form .item {
+            width: 305px;
+            height: 38px;
+            border: 1px solid #c3c3c3;
+            margin-left: 10px;
+            margin-top: 20px;
+        }
+        .b .form form .item label{
+            display: inline-block;
+            width: 38px;
+            height: 38px;
+            border-right: 1px solid #C3C3C3;
+            float: left;
+        }
+        .b .form form .item input{
+            display: inline-block;
+            width: 260px;
+            height: 38px;
+            border: none;
+            float: left;
+        }
+        .b .form form .item .l1{
+            background: url(image/icon1.jpg) no-repeat left top;
+        }
+
+        .b .form form .item .l2{
+            background: url(image/icon2.jpg) no-repeat left top;
+        }
+    </style>
+</head>
+<body>
+<div class="top">
+    <a href="#"><img src="image/logo.png" /></a>
+    <span>欢迎登录</span>
+    <div style="clear: both;"></div>
+</div>
+<div class="b">
+    <div class="form">
+        <h2>京东会员<a href="#">立即注册</a></h2>
+        <form action="loginServlet" method="post" enctype="">
+            <div class="item">
+                <label class="l1"></label>
+                <input type="text" name="username" placeholder="邮箱/用户名/已验证手机号"/>
+            </div>
+            <div class="item">
+                <label class="l2"></label>
+                <input type="password" name="pwd"  placeholder="请输入密码"/>
+            </div>
+            <div class="item">
+                <label class="l2"></label>
+                <input type="submit" value="登录"/>
+            </div>
+        </form>
+    </div>
+</div>
+<div class="bottom"></div>
+</body>
+</html>
